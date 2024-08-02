@@ -1,0 +1,140 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body > header {
+	background-color: #2f3640;
+	padding: 16px 0;
+	color: #f5f6fa;
+	font-family: "SF Pro",Arial, Helvetica, sans-serif;
+
+}
+
+header .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 1%;
+	
+}
+
+header li {
+	display: inline;
+	padding-left: 16px;
+}
+
+header li a {
+	color: #f5f6fa;
+	text-decoration: none;
+}
+
+.container {
+	width: auto;
+	margin: 0 auto;
+}
+
+.articles {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	font-family: "SF Pro",Arial, Helvetica;
+
+	padding: 0.5% 5% 1%;
+}
+
+.articles article {
+	width: 32%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 1%;
+
+}
+
+.articles h2 {
+	width: 100%;
+	margin: 16px 0;
+	font-family: "SF Pro",Arial, Helvetica, sans-serif;
+	font-weight: 100;
+	font-size: 26pt;
+
+}
+
+.articles article h3 {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	font-size: 24px;
+}
+
+.articles article a {
+	background-color: blue;
+	color: #fff;
+	padding: 8px;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: bold;
+	margin-top: auto;
+	width: fit-content;
+}
+
+.articles article p {
+	margin-bottom: 6%;
+}
+
+.articles article a:hover {
+	text-decoration: underline;
+}
+
+.articles article img {
+	height: 300px;
+	width: 100%;
+	object-fit: cover; /* Corta o excesso e mantém a proporção */
+	object-position: center; /* Centraliza a imagem dentro do espaço */
+}
+
+.articles article p,
+.articles article a {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+	padding: 16px 0;
+}
+
+section h2 {
+	font-size: 32px;
+}
+
+#sports {
+	background-color: rgba(0, 255, 0, 0.1);
+}
+
+#sports .articles article a {
+	background-color: #009432;
+}
+
+#economy {
+	background-color: #f8f59f;
+}
+
+#economy .articles article a {
+	color: #f5f6fa;
+}
+
+#entretenimento {
+	background-color: rgba(212, 229, 254, 1);
+}
+
+#entretenimento .articles article a {
+	color: #f5f6fa;
+}
+
+#tecnologia {
+	background-color: rgba(250, 238, 255, 1);
+}
+
+#tecnologia .articles article a {
+	color: #f5f6fa;
+}
